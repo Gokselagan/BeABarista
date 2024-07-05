@@ -1,5 +1,6 @@
 import { Box, Button, Container, Grid } from "@mui/material";
 import {useNavigate} from "react-router-dom";
+import backgroundImage from "../assets/images/beABarista.png";
 
 export const HomePage = () => {
 
@@ -10,7 +11,13 @@ export const HomePage = () => {
     }
  
     return (
-        <Container>
+        <Container sx={{
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize : "cover",
+            backgroundRepeat: "no-repeat",
+            height: "100vh",
+            backgroundPosition: "center",
+            }}>
             <Box 
             display="flex"
             justifyContent="center"
