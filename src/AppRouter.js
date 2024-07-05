@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/homepage";
-import { FruitToCup } from "./pages/page1";
-import { HistoryOfCoffee } from "./pages/page2";
-import { BenefitsOfCoffee } from "./pages/page3";
-import { TypesOfCoffee } from "./pages/page4";
-import { TestYourself } from "./pages/page5";
+import { FruitToCup } from "./pages/fruitToCup";
+import { HistoryOfCoffee } from "./pages/historyOfCoffee";
+import { BenefitsOfCoffee } from "./pages/benefitsOfCoffee";
+import { TypesOfCoffee } from "./pages/typesOfCoffee";
+import { TestYourself } from "./pages/testPage";
 
 export const AppRouter = () => {
     return (
