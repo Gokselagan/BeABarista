@@ -24,7 +24,7 @@ export const FruitToCup = () => {
                 <li>The most common types are <strong>ARABICA</strong> and <strong>ROBUSTA</strong>.</li>
             </ul>
 
-            <img src={coffeeFlower} alt="coffee flower image" width="90%" style={{borderRadius:"10%"}} />
+            <img src={coffeeFlower} alt="coffee flower image" height="300px" width="60%" style={{borderRadius:"10%"}} />
 
         </div>
     )
