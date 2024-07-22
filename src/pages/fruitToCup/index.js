@@ -1,4 +1,4 @@
-import { Typography, Box } from "@mui/material";
+import { Typography, Box, Container, Divider } from "@mui/material";
 import coffeeFruitImg from "../../assets/images/coffeeFruit.jpg";
 import coffeeFlower from "../../assets/images/coffeeFlower.jpg";
 import flowerToPlant from "../../assets/images/flowerToPlant.png";
@@ -16,44 +16,62 @@ import dryBeans from "../../assets/images/drybeans.png";
 
 export const FruitToCup = () => {
     return (
-        <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-            <h1>Fruit To Cup</h1>
+        <Container maxWidth="md" style={{ padding: "20px" }}>
+            <Typography variant="h2" align="center" gutterBottom>
+                Fruit To Cup
+            </Typography>
 
-            <img src={coffeeFruitImg} alt="fruit to bean images" width="60%" style={{ margin: "0px auto" }} />
+            <Box mb={4}>
+                <img
+                    src={coffeeFruitImg}
+                    alt="fruit to bean images"
+                    style={{ width: "100%", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+                />
+            </Box>
 
-            <Box textAlign="left">
-                <Typography variant="h4">
-                    What is a coffee plant?
+            <Box mb={4}>
+                <Typography variant="h4" gutterBottom>
+                    What is a Coffee Plant?
                 </Typography>
-
-                <Typography variant="body1">
+                <Typography variant="body1" paragraph>
                     Coffee is a tree belonging to the genus Coffea in the Rubiaceae family.
                 </Typography>
+                <ul style={{ lineHeight: "1.6", textAlign: "left" }}>
+                    <li>It grows in semi-tropical climates.</li>
+                    <li>The average temperature should be 15-20°C.</li>
+                    <li>It grows at altitudes of 0-2500m.</li>
+                    <li>The most common types are <strong>ARABICA</strong> and <strong>ROBUSTA</strong>.</li>
+                </ul>
+            </Box>
 
-                <Box >
-                    <ul style={{ lineHeight: "20px", textAlign: "left" }}>
-                        <li>It grows in semi-tropical climates.</li>
-                        <li>The average temperature should be 15-20c.</li>
-                        <li>It grows at altitudes of 0-2500m.</li>
-                        <li>The most common types are <strong>ARABICA</strong> and <strong>ROBUSTA</strong>.</li>
-                    </ul>
+            <Box mb={4} textAlign="center">
+                <img src={coffeeFlower} alt="coffee flower image" style={{ width: "80%", borderRadius: "8px" }} />
+            </Box>
+
+            <Divider />
+
+            <Box mb={4}>
+                <Typography variant="h4" gutterBottom>
+                    From Flower to Coffee Plant: The Production Process
+                </Typography>
+                <Box textAlign="center" mb={2}>
+                    <img
+                        alt="flower to plant images"
+                        src={flowerToPlant}
+                        style={{ width: "100%", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+                    />
                 </Box>
             </Box>
 
-            <Box>
-                <img src={coffeeFlower} alt="coffee flower image" />
-            </Box>
+            <Divider />
 
-            <Box display="flex" flexDirection="column" margin="16px auto">
-                <Typography variant="h4">From Flower to Coffee Plant The Production Process</Typography>
+            <Box mb={4}>
+                <Typography variant="h4" gutterBottom>
+                    Differences Between Coffee Varieties
+                </Typography>
 
-                <img alt="flower to plant images" src={flowerToPlant} style={{ marginTop: "16px" }} />
-            </Box>
-
-            <Box textAlign="start">
-                <Typography >What Are the Differences Between Coffee Varieties?</Typography>
-                <Typography >ARABICA</Typography>
-                <ul>
+                <Typography variant="h5" gutterBottom>ARABICA</Typography>
+                <ul style={{ lineHeight: "1.6", textAlign: "left" }}>
                     <li>2/3 of the world's production</li>
                     <li>Grows at altitudes of 600 to 2500 meters</li>
                     <li>15° to 24°C</li>
@@ -66,10 +84,16 @@ export const FruitToCup = () => {
                     <li>Good balance of bitterness and acidity</li>
                 </ul>
 
-                <img alt="arabica and robusta coffee bean" src={arabicaRobusta} width="40%" />
+                <Box textAlign="center" mb={2}>
+                    <img
+                        alt="arabica and robusta coffee bean"
+                        src={arabicaRobusta}
+                        style={{ width: "80%", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+                    />
+                </Box>
 
-                <Typography>ROBUSTA</Typography>
-                <ul>
+                <Typography variant="h5" gutterBottom>ROBUSTA</Typography>
+                <ul style={{ lineHeight: "1.6", textAlign: "left" }}>
                     <li>1/3 of the world's production</li>
                     <li>Grows at altitudes of 0 to 800 meters</li>
                     <li>18° to 36°C</li>
@@ -83,76 +107,147 @@ export const FruitToCup = () => {
                 </ul>
             </Box>
 
-            <Box>
-                <Typography variant="h4">How are the planting and harvesting processes carried out?</Typography>
-                <Box display="flex" flexDirection="row" justifyContent="space-between" padding="70px" overflow="hidden" >
-                    <img alt="coffee drying image" src={coffeeDry} width="500px" height="500px" />
-                    <img alt="coffee planting image" src={plantingCofee} width="500px" height="500px" />
+            <Divider />
+
+            <Box mb={4}>
+                <Typography variant="h4" gutterBottom>
+                    Planting and Harvesting Processes
+                </Typography>
+                <Box display="flex" justifyContent="space-between" alignItems="center" mb={2} flexWrap="wrap">
+                    <Box width="48%">
+                        <img
+                            alt="coffee drying image"
+                            src={coffeeDry}
+                            style={{ width: "100%", height: "auto", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+                        />
+                    </Box>
+                    <Box width="48%">
+                        <img
+                            alt="coffee planting image"
+                            src={plantingCofee}
+                            style={{ width: "100%", height: "auto", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+                        />
+                    </Box>
+                </Box>
+                <Box style={{textAlign:"left"}}>
+                    <Typography variant="body1" paragraph>
+                        They are cultivated through grafting or planting methods. Saplings grown in nurseries for a year are then planted on slopes.
+                    </Typography>
+                    <Typography variant="body1" paragraph>
+                        The cultivated saplings start bearing fruit after 3 years and continue to do so for 15 years.
+                    </Typography>
+                    <Typography variant="body1" paragraph>
+                        Coffee plants can grow up to 4-5 meters, but in plantations, the plant heights are limited to 2-3 meters. This makes harvesting easier. Each plant can yield 6 kg of fruit, from which an average of 1 kg of green coffee is obtained.
+                    </Typography>
+                </Box>
+            </Box>
+
+            <Divider />
+
+            <Box mb={4}>
+                <Typography variant="h4" gutterBottom>
+                    Hand-Picking Method
+                </Typography>
+                <Typography variant="body1" paragraph>
+                    In this system, the picker harvests the fruits individually, selecting only those that have reached the correct ripeness. This method is costly, but it yields the highest quality.
+                </Typography>
+                <Box textAlign="center" mb={2}>
+                    <img
+                        alt="coffee hand picking image"
+                        src={handPickingCoffee}
+                        style={{ width: "80%", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+                    />
+                </Box>
+            </Box>
+
+            <Divider />
+
+            <Box mb={4}>
+                <Typography variant="h4" gutterBottom>
+                    Stripping Method
+                </Typography>
+                <Typography variant="body1" paragraph>
+                    All the fruits on the branch are stripped off and collected. The stripping method is preferred more often due to its lower cost. However, the quality of the harvest is lower compared to the hand-picking method.
+                </Typography>
+                <Box textAlign="center" mb={2}>
+                    <img
+                        alt="stripping coffee bean"
+                        src={strippingCoffeeBean}
+                        style={{ width: "80%", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+                    />
+                </Box>
+            </Box>
+
+            <Divider />
+
+            <Box mb={4}>
+                <Typography variant="h4" gutterBottom>
+                    Machine Harvesting Method
+                </Typography>
+                <Typography variant="body1" paragraph>
+                    In this method, the ripeness level of the fruit is not considered very important.
+                </Typography>
+                <Box textAlign="center" mb={2}>
+                    <img
+                        alt="coffee harvesting machine"
+                        src={coffeeHarvestingMachine}
+                        style={{ width: "80%", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+                    />
+                </Box>
+            </Box>
+
+            <Divider />
+
+            <Box mb={4}>
+                <Typography variant="h4" gutterBottom>
+                    Coffee Processing
+                </Typography>
+                <Box display="flex" justifyContent="space-between" alignItems="center" mb={2} flexWrap="wrap">
+                    <Box width="48%">
+                        <img
+                            alt="dry coffee beans"
+                            src={dryCoffeeBean}
+                            style={{ width: "100%", height: "auto", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+                        />
+                    </Box>
+                    <Box width="48%">
+                        <img
+                            alt="coffee washing"
+                            src={coffeeWashing}
+                            style={{ width: "100%", height: "auto", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+                        />
+                    </Box>
                 </Box>
 
-                <Box textAlign="start">
-                    <ul>
-                        <li>They are cultivated through grafting or planting methods. Saplings grown in nurseries for a year are then planted on slopes.</li>
-                        <li>The cultivated saplings start bearing fruit after 3 years and continue to do so for 15 years.</li>
-                        <li>Coffee plants can grow up to 4-5 meters, but in plantations, the plant heights are limited to 2-3 meters. This makes harvesting easier. Each plant can yield 6 kg of fruit, from which an average of 1 kg of green coffee is obtained.</li>
-                    </ul>
+                <Typography variant="body1" paragraph>
+                    After harvesting, the coffee beans undergo several processing stages. The beans are washed, dried, and then roasted to develop their flavor profile.
+                </Typography>
+
+                <Box display="flex" justifyContent="space-between" alignItems="center" mb={2} flexWrap="wrap">
+                    <Box width="48%">
+                        <img
+                            alt="moisturizing coffee beans"
+                            src={moisturizingCoffee}
+                            style={{ width: "100%", height: "auto", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+                        />
+                    </Box>
+                    <Box width="48%">
+                        <img
+                            alt="gummy coffee beans"
+                            src={gummyCoffeeBean}
+                            style={{ width: "100%", height: "auto", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+                        />
+                    </Box>
                 </Box>
 
+                <Box textAlign="center" mb={2}>
+                    <img
+                        alt="dry beans"
+                        src={dryBeans}
+                        style={{ width: "80%", borderRadius: "8px", boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)" }}
+                    />
+                </Box>
             </Box>
-
-            <Box>
-                <Typography variant="h4">
-                    What Is The Hand-Picking Method?
-                </Typography>
-                <Typography variant="body1" paragraph>In this system, the picker harvests the fruits individually, selecting only those that have reached the correct ripeness. This method is costly, but it yields the highest quality.</Typography>
-                <img alt="coffee hand picking image" src={handPickingCoffee} />
-            </Box>
-
-            <Box>
-                <Typography variant="h4">
-                    What is the Stripping Method?
-                </Typography>
-                <Typography variant="body1" paragraph>All the fruits on the branch are stripped off and collected. The stripping method is preferred more often due to its lower cost. However, the quality of the harvest is lower compared to the hand-picking method.</Typography>
-                <img alt="stripping coffee bean" src={strippingCoffeeBean} />
-            </Box>
-
-            <Box>
-                <Typography variant="h4">What is the Machine Harvesting Method?</Typography>
-                <Typography variant="body1" paragraph>In this method, the ripeness level of the fruit is not considered very important.</Typography>
-                <img alt="coffee harvesting machine" src={coffeeHarvestingMachine} />
-            </Box>
-
-            <Box>
-                <Typography variant="h4">How is Green Coffee Processed?</Typography>
-                <Typography variant="h5">1) Natural (Dry) Method</Typography>
-                <Typography variant="body1" paragraph>The fruits are spread out in layers 3-4 cm thick. They are regularly stirred up to 22 times a day.
-                    The coffee fruits are dried in greenhouses at temperatures up to 45°C.
-                    This process helps transfer the sugar from the fruit to the green beans.</Typography>
-                <img alt="a woman spreads coffee beans" src={dryCoffeeBean} />
-
-                <Typography variant="h5">2) Washing (Wet) Method</Typography>
-                <Typography variant="body1" paragraph>Coffee cherries and other foreign particles are washed with water to separate them, ensuring that only the correct beans are selected. The pulp and outer layers are removed from the beans.</Typography>
-
-                <img alt="a men washing coffee beans" src={coffeeWashing} />
-
-
-
-            </Box>
-
-            <Box>
-                <Typography variant="h4">Gummy Layer in Coffee</Typography>
-                <img alt="gummy layer in coffee" src={gummyCoffeeBean} />
-                <Typography variant="h4">How is the Washing and Moisturizing Process Done?</Typography>
-                <Typography variant="body1" paragraph>After being sorted, the beans covered with a gummy substance are placed in fermentation tanks. They are left there for 16 to 72 hours.</Typography>
-                <img alt="moisturizing process of coffee" src={moisturizingCoffee} />
-                <Typography variant="body1" paragraph>To remove the gum-like sticky substance on the coffee beans, each kilogram is washed in 10-12 liters of water.
-                    To complete this operation, the beans are spread in layers 3-4 cm thick and undergo a final drying process in the greenhouse.<strong>This process enhances the flavor quality and adds taste to the coffee.</strong></Typography>
-                <Typography variant="h4">How is the Drying Process Done?</Typography>
-                <img alt="dry coffee beans" src={dryBeans} />
-                <Typography variant="body1" paragraph>After the coffee beans undergo the above processing methods, they need to be dried.
-                    They are placed on concrete patios, raised beds, sun-drying beds, or in mechanical dryers and dried until the moisture content decreases to approximately 10-12%.
-                    After drying, the beans are sent to a dry mill. In the dry mill, the dried beans are separated from the final husk layer, classified by size, density, and color, and defective beans are removed. Therefore, the dry mill plays a crucial role in ensuring that the green coffee obtained is of the highest quality.</Typography>
-            </Box>
-        </div>
-    )
-}
+        </Container>
+    );
+};
