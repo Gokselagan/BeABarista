@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Typography, Box } from '@mui/material';
 import grindLevels from "../../assets/images/grindLevels.png";
+import turkishCoffeeAndWater from "../../assets/images/turkishCoffeeAndWater.png";
+import coffeemaniaTurkishCoffee from "../../assets/images/coffeemaniaTürkishCoffee.png";
 
 export const BenefitsOfCoffee = () => {
     return (
@@ -44,16 +46,62 @@ export const BenefitsOfCoffee = () => {
                 </Box>
 
                 <Box mb={4}>
-                    <Typography variant="h5" gutterBottom>
+                    <Typography variant="h5" gutterBottom align="left">
                         Turkish Coffee
                     </Typography>
-                    <Typography paragraph>
-                        Turkish coffee is typically made with Brazilian-origin beans known as Rio Minas, accounting for 90% of Turkish coffee. It is a traditional method dating back to the Ottoman Empire, noted for its distinctive taste, aroma, and presentation. Turkish coffee is unique as it is the only coffee served with its grounds.
+                    <Typography paragraph align="left">
+                        Ready-made ground coffee or coffee beans sold for Turkish coffee are usually of Brazilian origin. This type of bean, known as Rio Minas, constitutes 90% of Turkish coffee.
                     </Typography>
-                    <Typography paragraph>
-                        <strong>Preparation:</strong> Turkish coffee is often prepared using a cezve, a small pot designed specifically for brewing coffee. The coffee is served in small cups, known as fincans, and is traditionally accompanied by a glass of water and a piece of Turkish delight or a sweet treat.
+                    <Typography paragraph align="left">
+                        Turkish coffee is one of the oldest methods of preparing and brewing coffee that has come from the Ottoman Empire to today, playing a significant role in Turkish culture. It has a unique identity and tradition with its distinctive taste, foam, aroma, and presentation. It is the only type of coffee served with its grounds.
                     </Typography>
-                    <img src="" alt="Turkish Coffee" style={{ width: '100%', height: 'auto' }} />
+                    <Typography fontWeight="600">Preperation</Typography>
+                    <ol>
+                        <li align="left">First, two teaspoons of Turkish coffee are placed into the cezve (a special pot) for each cup. It is important that the coffee is as freshly ground as possible; we do not recommend using coffee that has been stored for a long time or has become moist in an open container.</li>
+                        <li align="left">Then, add enough water for each cup. It is also important to use drinking water. Chlorinated tap water can spoil the taste of your coffee. If you want your coffee to be frothier, it is recommended to use water from the refrigerator.</li>
+                        <li align="left">Next, add sugar cubes or granulated sugar according to the desired level of sweetness. Everyone's sugar preference for Turkish coffee is different. While no sugar is added to plain coffee, half a cube is added for lightly sweetened coffee, one cube for moderately sweetened coffee, and two cubes for sweetened coffee.</li>
+                        <li align="left">After arranging everything and placing it in the cezve, stir all the ingredients well before putting them on the stove. The spoon, like the coffee, should also be free of moisture.</li>
+                        <li align="left">The next important detail is to cook the coffee over low heat. If it is cooked over high heat, it may boil quickly without absorbing its essence. Therefore, coffee cooked over embers is the best. Another important detail is not to stir it after putting it on the stove, as stirring can prevent the formation of foam.</li>
+                        <li align="left">The coffee is removed from the heat when it reaches the boiling point, as the foam may recede if left too long. However, the coffee is not immediately poured into the cups after being removed from the heat. First, the foam that has accumulated on top is distributed to the cups with a spoon, and then it is put back on the heat. On its next boil, the cups are filled halfway, mostly with foam.</li>
+                        <li align="left">Finally, when it boils again, the coffee is equally distributed into the cups. It is important to pour the coffee from the side of the cup. Pouring directly in the center can disperse the foam, preventing you from achieving the desired frothy appearance.</li>
+                    </ol>
+                </Box>
+
+                <Box style={{ display: "flex", flexDirection: "row", alignItems:"flex-start", gap:"15px", marginBottom:"30px" }}>
+                    <Box>
+                        <img alt='turkish coffee and water' src={turkishCoffeeAndWater} height="auto" maxWidth="100%"/>
+                    </Box>
+                    <Box style={{ display: "flex", flexDirection: "column", gap: "1px" }}>
+                        <Typography variant='h5' fontWeight="600">COFFEEMANIA TURKISH COFFEE</Typography>
+                        <Box>
+                            <ul>
+                                <li align="left">Coffeemania Turkish coffees are a special blend belonging to the Brazil region. The Rio Minas region is not used.</li>
+                                <li align="left">It is prepared as a medium roast.</li>
+                                <li align="left">Compared to coffees sold in the market, it has a more acidic taste.</li>
+                                <li align="left">Packages are labeled as 100 grams with an expiration date of 1 year. Once the package is opened, it should be stored in airtight containers, and a shelf life of 1 week should be labeled.</li>
+                            </ul>
+                        </Box>
+                        <Box>
+                            <Typography variant='h5'>HOW TO PREPARE IT?</Typography>
+                            <Typography variant="body1" align="left">Use 7 grams of Turkish coffee.Add the coffee to the pot of the coffee machine.For lightly sweetened coffee, add 1 sugar cube; for moderately sweetened coffee, add 2 sugar cubes; for sweet Turkish coffee, add 3 sugar cubes to the chamber.Once the machine indicates it is ready, serve with 330 ml of water and a piece of chocolate.</Typography>
+                        </Box>
+                    </Box>
+                </Box>
+
+                <Box style={{ display: "flex", flexDirection: "row", alignItems:"flex-start", gap:"15px" }}>
+                    <Box>
+                        <img alt='turkish coffee' src={coffeemaniaTurkishCoffee} width="100%"/>
+                    </Box>
+                    <Box style={{ display: "flex", flexDirection: "column", gap: "1px" }}>
+                        <Typography variant='h5' fontWeight="600">MILKY TURKISH COFFEE</Typography>
+                        <Box>
+                          <Typography>Use 7 grams of Turkish coffee. Add 7 grams of coffee to the coffee machine's pot. For lightly sweetened coffee, add 1 sugar cube; for moderately sweetened coffee, add 2 sugar cubes; for sweet Turkish coffee, add 3 sugar cubes. Once the machine indicates it is ready, pour the coffee into the cup, leaving about 10 ml of space at the top. Fill the remaining space with milk prepared to a latte consistency and at an appropriate temperature. Serve with 330 ml of mineral water and a piece of chocolate.</Typography>
+                        </Box>
+                        <Box>
+                            <Typography variant='h5'>MASTIC TURKISH COFFEE</Typography>
+                            <Typography variant="body1" align="left">Use 7 grams of mastic Turkish coffee. Add the coffee to the coffee machine's pot. For lightly sweetened coffee, add 1 sugar cube; for moderately sweetened coffee, add 2 sugar cubes; for sweet Turkish coffee, add 3 sugar cubes.</Typography>
+                        </Box>
+                    </Box>
                 </Box>
             </Box>
         </Container>
